@@ -10,7 +10,7 @@ export const Todo = () => {
   };
 
   const handleAdd = (event) => {
-    setTodos([...addTodo, { addTodo, isComplated: false }]);
+    setTodos([...addTodo, {id: uuidv4(),addTodo, isComplated: false }]);
     setAddTodo("");
     console.log("Added Successfuly... ");
   
@@ -20,7 +20,7 @@ export const Todo = () => {
   };
 
   const handleDelete = (event, id) => {
-     id = event.target.name
+    // let id = event.target.name
   };
 
   return (
